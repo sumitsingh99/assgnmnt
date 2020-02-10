@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 450px}
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color:white;
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {height:auto;}
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-info">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle btn-dark" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Delhi
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Gorakhpur</a></li>
+                        <li><a href="#">Rajasthan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mumbai
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Gorakhpur</a></li>
+                        <li><a href="#">Rajasthan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Departure
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Return
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Passanger and Class
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="btn-block"></span> Search</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <div class="content">
+                <span>
+                    <p class="text-left">Filters</p>
+                </span>
+            </div>
+            <h4 class="text-left">Departure</h4>
+            <div class="row">
+                <span>4am-11am</span>
+                <span>11am-4pm</span>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <span>4pm-11pm</span>
+                <span>9pm-4am</span>
+            </div>
+            <span class="text-left"><h4 style="margin-top: 20px">Return</h4></span>
+            <div class="row">
+                <span>4am-11am</span>
+                <span>11am-4pm</span>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <span>4pm-11pm</span>
+                <span>9pm-4am</span>
+            </div>
+            </span class="text-left"><h4 style="margin-top: 20px">Stop</h4></span>
+            <div class="row">
+                <span>Stop 1</span>
+                <span>Stop 2</span>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <span>Stop 3</span>
+            </div>
+            <div class="row" style="margin-top: 50px">
+                <span>Onward Price</span>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <input type="range" min="200" max="8000">
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <span>Return Price</span>
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <input type="range" min="200" max="8000">
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <span>Prefered Airlines</span>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Air India</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Go India</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Indigo</label>
+                </div>
+            </div>
+        </div>
+        <div class="row text-left">
+            <h4>Fare Calander</h4>
+            <div class="row">
+
+            </div>
+                    </div>
+
+
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
